@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Table</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			/* Write your CSS here */
+			.learn { font-family: Poppins, sans-serif; font-size: 16px; color: rgb(139, 151, 159); background-color: rgb(247,247,247); }
+				.card { box-sizing: border-box; margin: auto; padding: 3rem; width: 844px; height: 625px; border-radius: 8px; background-color: rgb(255, 255, 255); 
+				box-shadow: 8px 12px 12px 12px rgba(228, 228, 229, 0.408); }
+					h1 { margin: 0; padding: 0 0 3rem; font-size: 2rem; font-weight: 900; color:rgb(19, 42, 59)}
+					table { box-sizing: border-box; margin: 0; padding: 0; border: 1px solid rgb(233,235,236); border-radius: 4px; border-spacing: 0;}
+						thead { background-color: rgb(19, 42, 59); color: rgb(205, 209, 209); text-transform: uppercase; font-size: .9rem; }
+						tfoot { background-color:rgb(249, 250, 250); font-size: .9rem; font-weight: 700; border-radius: 0 0 4px 4px; }
+							th, td { box-sizing: border-box; width: 14rem; padding: 1rem 2rem; text-align: start; }
+							tbody td { border-bottom: 1px solid rgb(233,235,236); }
+							b { color:rgb(19, 42, 59) }
+
+							/* status column with colored text and background */
+							.status-column { text-align: center; }
+							.status { padding: .5rem 1rem; margin: auto; border-radius: 2rem; font-weight: 700; }
+							.processing { background-color: rgb(212,237,255); color:rgb(36,156,244); }
+							.success { background-color: rgb(226,249,221); color: rgb(78,181,30); }
+							.reverted  { background-color: rgb(255,212,212); color: rgb(245,92,59); }
+
+							/* corner cells with rounded corners */
+							.corner-left-top { border-radius: 4px 0 0 0;}
+							.corner-right-top { border-radius: 0 4px 0 0;}
+							.corner-right-bottom { border-radius: 0 0 4px 0;}
+							.corner-left-bottom { border-radius: 0 0 0 4px; }
+
+
+		</style>
+	</head>
+	<body class="flip">
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<!-- Write your HTML here -->
+			<div class="card">
+				<h1>Payouts</h1>
+				<table>
+					<thead>
+						<tr>
+							<th class="corner-left-top">Payee</th>
+							<th>Amount</th>
+							<th>Date</th>
+							<th class="status-column corner-right-top">Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!-- Row 1 -->
+						<tr>
+							<td>
+								<b>John Wick</b><br>
+								Shoota Inc
+							</td>
+							<td>$42,272.23</td>
+							<td>Jan 13, 2022</td>
+							<td class="status-column">
+								<span class="status processing">Processing</span>
+							</td>
+						</tr>
+						<!-- Row 2 -->
+						<tr>
+							<td>
+								<b>Willem Dafoe</b><br>
+								Spider Inc
+							</td>
+							<td>$27,221.00</td>
+							<td>Dec 07, 2021</td>
+							<td class="status-column">
+								<span class="status success">Success</span>
+							</td>
+						</tr>
+						<!-- Row 3 -->
+						<tr>
+							<td>
+								<b>Chuck Norris</b><br>
+								Roundhouse Inc
+							</td>
+							<td>$6,982.00</td>
+							<td>Oct 20, 2021</td>
+							<td class="status-column">
+								<span class="status success">Success</span>
+							</td>
+						</tr>
+						<!-- Row 4 -->
+						<tr>
+							<td>
+								<b>Nick Cage</b><br>
+								Convicts Inc
+							</td>
+							<td>$13,821.72</td>
+							<td>Oct 14, 2021</td>
+							<td class="status-column">
+								<span class="status reverted">Reverted</span>
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td class="corner-left-bottom">Total Paid</td>
+							<td class="corner-right-bottom" colspan=3>$90,296,95</td>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Table">
+			<img width="903px" src="images/reference/table.png" alt="Table" />
+		</section>
+	</body>
+</html>

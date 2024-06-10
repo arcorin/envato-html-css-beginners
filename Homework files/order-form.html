@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Order form</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			/* Write your CSS here */
+
+			.learn { display: flex; justify-content: center; align-items: center; font-family: 'Poppins', sans-serif; background-color: rgb(247, 247, 247); color: rgb(59, 59, 59); }
+				.card { padding: 2rem 3.5rem 0; width: 740px; border-radius: 8px; box-shadow: 0 8px 12px 4px rgb(225, 225, 225);  background-color: white; }
+					h1 { font-size: 2rem; font-weight: 900; }
+						.row { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: 2rem; }
+						
+							.row-item { width: 100%; }
+								.row-label { font-weight: 600; }
+								label { display: block; margin: .5rem 0; }
+								input, select, textarea { border: 1px solid rgb(228, 228, 228); }
+
+								.row-item input, .row input, select  { box-sizing: border-box; display: inline-block; margin: 0; padding: 1rem; width: 100%; border-radius: 6px; font-size: 1.1rem; }
+
+								.row-item-address input { display: inline-block; }
+								
+								input:disabled, 
+								label:has(input:disabled) /* label with an "disabled" <input> child */  
+								{ color: rgb(191, 191, 191); }
+
+								input[type="email"]:disabled { background-color: rgb(247, 248, 249); }
+						
+						/* <input> type="checkbox" anad type="radio" */
+						.justify-start { display: flex; justify-content: flex-start; gap: 2rem; }
+
+							/* <input> type="checkbox" */
+							.justify-start label { display: flex; gap: 1rem; font-size: .9rem; }
+
+							input[type="checkbox"] { appearance: none; content: " "; box-sizing: border-box; padding: 0;  width: 1.2rem; height: 1.2rem; border: none; outline: 3px solid gray; border-radius: 2px; }
+
+							input[type="checkbox"]:disabled { outline: 3px solid rgb(221, 221, 221); }
+
+							input[type="checkbox"]:checked:before { appearance: none; content: " "; box-sizing: border-box; display: inline-block; margin: 0 0 2px 7px; width: .4rem; height: .8rem; border-right: 3px solid rgb(74, 92, 105); border-bottom: 3px solid rgb(74, 92, 105); transform: rotate(45deg); }
+
+							/* <input> type="radio" */
+							input[type="radio"] { appearance: none;  padding: 10px; width: 8px; height: 8px; border-radius: 16px; border: 3px solid rgb(74, 74, 74); }
+
+							input[type="radio"]:checked:before { appearance: none; content: " "; box-sizing: border-box; position: relative; right: 5px; bottom: 15px; padding: 5px; border-radius: 8px;  background-color: rgb(66,85,98); font-size: 1px; }
+
+						/* <textarea> */
+						textarea { box-sizing: border-box; margin-bottom: 3.5rem; padding: 1rem 1.5rem; width: 100%; border-radius: 6px; font-size: 1rem; font-family: 'Poppins', sans-serif; resize: none; }
+
+						/* Sign up */ 
+						.single-checkbox { display: flex; gap: 1rem; }
+							.single-checkbox>input:checked:before { margin-bottom: -1px; }
+						
+						
+					button { position: relative; right: -38rem; bottom: 3rem; padding: 1rem 1.5rem; border-radius: 4px; color: white; background-color: rgb(81, 101, 220); font-size: 1rem; }					
+
+		</style>
+	</head>
+	<body class="flip">
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<!-- Write your HTML here -->
+
+			<div class="card">
+				<h1>Your Order</h1>
+				<form action="" method="get" id="order-form">
+					<!-- Name Email - input text & input email -->
+					<div class="row">
+						<div class="row-item">
+							<label class="row-label" for="order-name">Name</label>
+							<input type="text" name="order-name" id="order-name" placeholder="Your full name" autofocus>
+						</div>
+						<div class="row-item">
+							<label class="row-label" for="order-email">Email address</label>
+							<input type="email" name="order-email" id="order-email" disabled value="chuck@roundhouse.com">
+						</div>
+					</div>
+				
+					<!-- Address - input text -->
+					<div>
+						<div class="row-item-address">
+							<label class="row-label" for="order-address-1">Address</label>
+							<div class="row">
+								<input type="text" name="order-adrress-1" placeholder="9 Augusta Street">
+								<input type="text" name="order-adrress-2" placeholder="Suite 122">
+							</div>
+						</div>
+					</div>
+					<!-- City State Zip - input text & select -->
+					<div class="row">
+						<div class="row-item">
+							<label class="row-label" for="order-city">City</label>
+							<input type="text" name="order-city" id="order-city" placeholder="New Jersey">
+						</div>
+						<div class="row-item">
+							<label class="row-label" for="order-state">State</label>
+							<select name="order-state" id="order-state">
+								<option value="New York">New York</option>
+								<option value="Alabama">Alabama</option>
+								<option value="Alaska">Alaska</option>
+								<option value="Arizona">Arizona</option>
+								<option value="Arkansas">Arkansas</option>
+							</select>
+						</div>
+						<div class="row-item">
+							<label class="row-label" for="order-zip">ZIP</label>
+							<input type="text" name="order-zip" id="order-zip" placeholder="726221">
+						</div>
+					</div>
+					<!-- Color Samples - input checkbox -->
+					<div >
+						<label class="row-label">What color samples should we send you?</label>
+
+						<div class="row justify-start">
+							<label for="sample-white">
+								<input type="checkbox" name="color-sample" id="sample-white" value="white" disabled> White
+							</label>
+							<label for="sample-magenta">
+								<input type="checkbox" name="color-sample" id="sample-magenta" value="magenta"> Magenta
+							</label>
+							<label for="sample-coral">
+								<input type="checkbox" name="color-sample" id="sample-coral" value="coral"> Coral
+							</label>
+							<label for="sample-burgundy">
+								<input type="checkbox" name="color-sample" id="sample-burgundy" value="burgundy"> Burgundy
+							</label>
+							<label for="sample-charcoal">
+								<input type="checkbox" name="color-sample" id="sample-charcoal" value="charcoal"> Charcoal
+							</label>
+						</div>
+					</div>
+					<!-- Team People -input radio -->
+					<div>
+						<label class="row-label">How large is your team</label>
+				
+						<div class="row justify-start">
+							<label for="team-small">
+								<input type="radio" name="team-size" id="team-small" value="1-5"> 1-5 people
+							</label>
+							<label for="team-medium">
+								<input type="radio" name="team-size" id="team-medium" value="6-10" checked> 6-10 people
+							</label>
+							<label for="team-large">
+								<input type="radio" name="team-size" id="team-large" value="10+"> 10+ people
+							</label>
+						</div>
+					</div>
+					<!-- Comments - textarea -->
+					<div>
+						<label class="row-label" for="order-comments">Comments</label>
+						<textarea name="order-comments" id="order-comments" cols="30" rows="6" placeholder="">Please also send me one of your catalogs so I can show your products to other people in my industry.</textarea>
+					</div>
+					<!-- Sign Up - input checkbox -->
+					<div>
+						<label class="single-checkbox" for="offer-sign-up">
+							<input type="checkbox" name="offer-sign-up" id="offer-sign-up">Sign up for special offers
+						</label>
+						<!-- Place Order - button or input button or input submit INSIDE FORM -->
+				
+						<!-- <button>Place Order</button> -->
+						<!-- <input type="button" value="Place Order"> -->
+						<!-- <input type="submit" value="Place Order"> -->
+					</div>
+				</form>
+
+				<!-- Place Order button - button - OUTSIDE FORM, LINKED TO THE FORM, using form="" attribute and providing id="" to the <form> -->
+				<button form="order-form">Place Order</button>
+
+
+			</div>
+
+			
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Order form">
+			<img width="903px" src="images/reference/order-form.png" alt="Order form" />
+		</section>
+	</body>
+</html>

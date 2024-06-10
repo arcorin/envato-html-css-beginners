@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Register form</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			/* Write your CSS here */
+			* { box-sizing: border-box; }
+
+			body { font-family: 'Poppins', sans-serif; }
+
+			.learn { display: flex; justify-content: center; align-items: center; background-color: rgb(247, 247, 247); } 
+				.card { padding: 3.5em 3rem 3rem; width: 630px; border-radius: 8px; box-shadow: 0 8px 12px 4px rgb(222, 221, 221); background-color: white; }
+					h1 { margin: 0 0 2.5rem; font-size: 2rem; font-weight: 900; }
+
+						form div { margin-bottom: 2rem; }
+
+						label { margin-bottom: 1rem; font-weight: 700; }
+
+						input[type="email"],
+						input[type="text"],
+						input[type="password"] {  display: block; margin-top: .4rem; padding: 1rem; width: 100%; background-color: white; border: 1px solid rgb(204, 204, 204); border-radius: 4px; font-size: 1rem; }
+
+						input[disabled] { background-color: rgb(243, 244, 245); }
+					
+					form button { margin-top: .7rem; padding: 1rem 1.5rem; border: none; border-radius: 4px; background-color: rgb(4, 155, 146); color: rgb(255, 255, 255); font-size: 1rem; font-weight: 700; }
+
+		</style>
+	</head>
+	<body>
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<!-- Write your HTML here -->
+			<div class="card">
+				<h1>Register a New Account</h1>
+				<form action="" method="post">
+					<div>
+						<label for="register-email">Email address</label>
+						<input type="email" name="register-email" id="register-email" value="chuck@roundhouse.com" disabled>
+					</div>
+					<div>
+						<label for="register-name">Name</label>
+						<input type="text" name="register-name" id="register-name" placeholder="Your full name">
+					</div>
+					<div>
+						<label for="register-password">Password</label>
+						<input type="password" name="register-password" id="register-password" placeholder="Your password">
+					</div>
+					<div>
+						<label for="register-c-password">Confirm Password</label>
+						<input type="password" name="register-c-password" id="register-c-password" placeholder="Your password">
+					</div>
+					<button>Register Account</button>
+				</form>
+			</div>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Register form">
+			<img width="704px" src="images/reference/register-form.png" alt="Register form" />
+		</section>
+	</body>
+</html>

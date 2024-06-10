@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Address</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			.learn { display: flex; justify-content: center; align-items: center; background-color: rgb(247, 247, 247); }
+
+				.card { box-sizing: border-box; padding: 2.5rem; width: auto; height: auto; border-radius: 8px; box-shadow: 0 8px 10px 5px rgba(117, 131, 140, .3); color: rgb(20, 41, 58); background-color: rgb(255, 255, 255); font-family: 'Poppins', sans-serif; font-size: 18px; line-height: 1.55; }
+
+					h1 { font-size: 1.75em; font-weight: 900; }
+					p { color: rgba(20, 41, 58, 0.8);}
+					hr { margin: 0; padding: 0; border-top: 1px solid rgba(117, 131, 140, .3); }
+
+					.address { padding-bottom: 1rem; }
+					.contact { padding-top: 1.5rem; font-size: 0.8rem; text-transform: uppercase; font-weight: 700; color: rgba(23, 45, 62, .8); }
+						span { font-size: .75rem; font-weight: 700; line-height: 1.8; text-transform: uppercase; letter-spacing: 1px; }
+						a { color: rgb(249, 129, 55); text-decoration: none;  }
+						a:hover { color: rgb(20, 41, 58); }
+						a:active { color: rgba(20, 41, 58, 0.5); } 
+
+		</style>
+	</head>
+	<body>
+		<section class="learn">
+			<!-- Practice area start -->
+			<div class="card">
+				<img src="./images/address/envelopes-bulk.svg" alt="Envelopes" width="36px" height="36px" >
+				<h1>Let's get in touch</h1>
+				<p class="address">
+					9 Augusta Street<br>
+					Fair Lawn, NJ 07410
+				</p>
+				<hr>
+				<p class="contact">
+					<span>email</span><br>
+					<a href="">chuck@roundhouse.com</a>
+				</p>
+				<p class="contact">
+					<span>phone</span><br>
+					<a href="">+1-202-555-0125</a>
+				</p>
+			</div>
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Address">
+			<img width="444px" src="images/reference/address.png" alt="Address" />
+		</section>
+	</body>
+</html>

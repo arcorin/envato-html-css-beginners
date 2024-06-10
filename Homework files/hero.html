@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Hero</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			/* Write your CSS here */
+			* { box-sizing: border-box; }
+			body { font-family: 'Poppins', sans-serif; color: rgb(19, 42, 59); }
+
+			/* Responsive Design (1) */
+			/* h1 and h2 : smaller margin-bottom for resolution < 1200px  */
+			h1 { margin: .5rem 0 2rem; font-size: 3.375rem; line-height: 1.33; letter-spacing: -2px; 
+				@media (min-width: 1200px) { margin-bottom: 3rem; }
+			}
+			h2 { margin-bottom: 2rem; font-size: 1.5rem; line-height: 1.5; font-weight: 400; color: rgba(19, 42, 59, 0.8);
+				@media (min-width: 1200px) { margin-bottom: 3rem; } 
+			}
+
+			a { color: rgb(19, 42, 59); text-decoration: none; font-weight: 500; }
+
+			.learn { display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 4rem; background-color: rgb(247, 247, 247); }
+				.card { display: flex; flex-direction: column; padding: 4rem; min-width: 400px; border-radius: 8px; box-shadow: 0 8px 12px 4px rgb(222, 221, 221); background-color: white; }
+
+					/* Responsive Design (2) */
+					/* "header" : smaller margin-bottom for resolution < 1200px */
+					.main-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4rem; 
+						@media (min-width: 1200px) { margin-bottom: 6rem; }	
+					}
+						
+						/* Responsive Design (3) */
+						/* navigation menu - visible for screen width > 1200px */
+						nav { display: none; 
+							@media (min-width: 1200px) { display: block; } }
+							ul { 
+								display: flex; gap: 2rem; padding: 0; list-style: none; }
+							
+						.btn { display: inline-flex; align-items: center; gap: .5rem; padding: 1rem 2rem; border-radius: 100px; color: white; background-color: rgb(44, 134, 217); }
+
+						/* Responsive Design (4) */
+						/* "Start now" button is visible for screen width > 1200px */
+						.btn.outline { display: none;  
+							@media (min-width: 1200px) { display: inline-flex; align-items: center; gap: .5rem; border: 2px solid rgb(44, 134, 217); color: rgb(44, 134, 217); background-color: transparent;} }
+
+						/* Responsive Design (5) */
+						/* The dot menu is visible for screen width < 1200px */	
+						.btn-mobile {
+							@media (min-width: 1200px) { display: none;}
+						}
+
+							/* .btn img { position: relative; top: .4rem; margin-left: .5rem; } */
+
+					/* Responsive Design (6) */
+					/* The .hero section:
+					- on 1 column for screen width < 1200px
+					- on 2 column for screen width > 1200px */
+					.hero { display: grid; grid-template-columns: 1fr; gap: 4rem; 					
+						@media (min-width: 1200px) { grid-template-columns: 1fr 1fr; justify-content: center; align-items: center; gap: 8rem; }
+					}
+				
+							.accent { color: #00c689; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
+						
+						/* Responsive Design (7) */
+						/* inside ".hero" section: the img before the written content for screen width < 1200px */	
+						.hero>img { order: -1; min-width: 200px; max-width: 100%; 
+							@media (min-width: 1200px) { min-width: 400px; order: 0; }
+						}
+
+
+		</style>
+	</head>
+	<body class="flip">
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<!-- Write your HTML here -->
+
+			<div class="card desktop">
+				<header class="main-header">
+					<a href=""> <img src="images/hero/logo-wally.svg" alt="Logo Wally"></a>
+
+					<nav>
+						<ul>
+							<li><a href="">Discover Wally</a></li>
+							<li><a href="">Pricing</a></li>
+							<li><a href="">About Us</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
+					</nav>
+					
+					<a href="" class="btn outline">Start Now <img src="images/hero/arrow-right-color.svg" alt="Arrow right"></a>
+					<a href="" class="btn-mobile"><img src="images/hero/menu-dots.svg" alt="Menu dots"></a>
+				</header>
+
+				<section class="hero">
+					<div class="content">
+						<p class="accent">Shopping made easy</p>
+						<h1>Create your digital wallet in just a few clicks.</h1>
+						<h2>Add your cards and pay with your phone everywhere. Convenience is the key.</h2>
+
+						<a href="" class="btn">Buy It Now <img src="images/hero/arrow-right-white.svg" alt="Arrow right"></a>
+					</div>
+
+					<img src="images/hero/illustration.svg" alt="illustration">
+				</section>
+
+			</div>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Hero">
+			<img width="1915px" src="images/reference/hero-desktop.png" alt="Hero" />
+			<img width="704px" src="images/reference/hero-mobile.png" alt="Hero" />
+		</section>
+	</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners: Example 2-11-2</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="econnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+	</head>
+
+	<body class="flip">
+		<section class="learn">
+			<!-- Practice area start --
+
+			<h1>Your Order</h1>
+
+			<form action="" method="get" id="order-form">
+
+				<! Name Email - input text & input email -->
+				<div>
+					<div>
+						<label for="order-name">Name</label>
+						<input type="text" name="order-name" id="order-name" placeholder="Your full name" autofocus>
+					</div>
+					<div>
+						<label for="order-email">Name</label>
+						<input type="email" name="order-email" id="order-email" disabled value="chuck@roundhouse.com">
+					</div>
+				</div>
+				
+				<!-- Address - input text -->
+				<div>
+					<div>
+						<label for="order-address-1">Address</label>
+						<input type="text" name="order-adrress-1" placeholder="9 Augusta Street">
+						<input type="text" name="order-adrress-2" placeholder="Suite 122">
+					</div>
+				</div>
+
+				<!-- City State Zip - input text & select -->
+				<div>
+					<div>
+						<label for="order-city">City</label>
+						<input type="text" name="order-city" id="order-city" placeholder="New Jersey">
+
+					</div>
+					<div>
+						<label for="order-state">State</label>
+						<select name="order-state" id="order-state">
+							<option value="New York">New York</option>
+							<option value="Alabama">Alabama</option>
+							<option value="Alaska">Alaska</option>
+							<option value="Arizona">Arizona</option>
+							<option value="Arkansas">Arkansas</option>
+						</select>
+					</div>
+					<div>
+						<label for="order-zip">Zip</label>
+						<input type="text" name="order-zip" id="order-zip" placeholder="726221">
+					</div>
+				</div>
+
+				<!-- Color Samples - input checkbox -->
+				<div>
+					<label>What color samples should we send you?</label>
+
+					<label for="sample-white">
+						<input type="checkbox" name="color-sample" id="sample-white" value="white" disabled> White
+					</label>
+					<label for="sample-magenta">
+						<input type="checkbox" name="color-sample" id="sample-magenta" value="magenta"> Magenta
+					</label>
+					<label for="sample-coral">
+						<input type="checkbox" name="color-sample" id="sample-coral" value="coral"> Coral
+					</label>
+					<label for="sample-burgundy">
+						<input type="checkbox" name="color-sample" id="sample-burgundy" value="burgundy"> Burgundy
+					</label>
+					<label for="sample-charcoal">
+						<input type="checkbox" name="color-sample" id="sample-charcoal" value="charcoal"> Charcoal
+					</label>
+				</div>
+
+				<!-- Team People -input radio -->
+				<div>
+					<label>How large is your team</label>
+					
+					<label for="team-small">
+						<input type="radio" name="team-size" id="team-small" value="1-5"> 1-5 people 
+					</label>
+					<label for="team-medium">
+						<input type="radio" name="team-size" id="team-medium" value="6-10" checked> 6-10 people 
+					</label>
+					<label for="team-large">
+						<input type="radio" name="team-size" id="team-large" value="10+"> 10+ people 
+					</label>
+				</div>
+
+				<!-- Comments - textarea -->
+				<div>
+					<label for="order-comments">Comments</label>
+					<textarea name="order-comments" id="order-comments" cols="30" rows="10"></textarea>
+				</div>
+
+				<!-- Sign Up - input checkbox -->
+				<div>
+					<label for="offer-sign-up">
+						<input type="checkbox" name="offer-sign-up" id="offer-sign-up">Sign up for special offers
+					</label>
+
+					<!-- Place Order - button or input button or input submit INSIDE FORM -->
+				
+					<!-- <button>Place Order</button> -->
+					<!-- <input type="button" value="Place Order"> -->
+					<!-- <input type="submit" value="Place Order"> -->
+				</div>
+			</form>
+
+			<!-- Place Order button - button - OUTSIDE FORM, LINKED TO THE FORM, using form="" attribute and providing id="" to the <form> -->
+			<button form="order-form">Place Order</button>
+			
+			
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="lesson 2-11: Using Forms and Buttons">
+			<img width="903px" src="images/reference/order-form.png" alt="Reference image" />
+		</section>
+	</body>
+</html>

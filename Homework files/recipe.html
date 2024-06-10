@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Recipe</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			/* Write your CSS here */
+			.learn { display: flex; font-family: 'Poppins', sans-serif; background-color: rgb(247, 247, 247); }
+				.card { box-sizing: border-box; margin: auto;  width: 470px; border-radius: 8px; box-shadow: 2px 8px 12px 4px rgba(221, 220, 220, 0.758); background-color: white; }
+					h1 { margin: 0; padding: 3rem; font-size: 2rem; font-weight: 900; }
+					img { width: 100%; }
+					.recipe { padding: 0.4rem 3rem 2rem; }
+						ul { padding: 1rem; }
+							ul li { list-style-type: none; }
+							ul li::before { padding: 0 .5rem 0 0; content: "\25cf"; font-size: 0.7rem; vertical-align: middle; }
+						.steps { margin: .8rem 0 1.8rem; padding: 1rem 2rem; border-radius: 8px; background-color: #f9f7f4; }
+							.steps ol { padding: 0 0 0 1rem; }
+						a { display: flex; justify-content: center; align-items: center; gap: 1rem; padding: 1rem; border-radius: 3rem; border: .25rem solid rgb(192, 71, 122); color: rgb(192, 71, 122); text-decoration: none; font-weight: 700; }
+							a img { width: auto; }
+
+		</style>
+	</head>
+	<body>
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<!-- Write your HTML here -->
+			<div class="card">
+				<h1>Classic cheesecake</h1>
+
+				<img src="images/recipe/cheesecake.jpg" alt="Cheesecake">
+
+				<div class="recipe">
+					<h2>Ingredients</h2>
+					<ul>
+						<li>Four 8-ounce blocks of cream cheese</li>
+						<li>1 cup of sugar</li>
+						<li>1 cup of sour cream</li>
+						<li>1 teaspoon of vanilla extract</li>
+						<li>3 eggs</li>
+					</ul>
+
+					<div class="steps">
+						<h2>Steps</h2>
+						<ol>
+							<li>Mix the ingredients</li>
+							<li>Add the sugar and vanilla extract</li>
+							<li>Cool it in the frige</li>
+							<li>Enjoy!</li>
+						</ol>
+					</div>
+
+					<a href=""><img src="images/recipe/bookmark.svg" alt="Bookmark icon"> Save this recipe</a>
+					<!-- <a href=""><img src="images/example/bookmark.png" alt="Bookmark icon" width="200px">Save this recipe</a> -->
+				</div>
+
+			</div>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Recipe">
+			<img width="560px" src="images/reference/recipe.png" alt="Recipe" />
+		</section>
+	</body>
+</html>

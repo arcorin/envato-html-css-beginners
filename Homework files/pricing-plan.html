@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Pricing plan</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			/* Write your CSS here */
+			
+			* { box-sizing: border-box; }
+
+			body { font-family: 'Poppins', sans-serif; }
+
+			.learn { display: flex; justify-content: center; align-items: center; background-color: rgb(247, 247, 247); }
+				.card { padding: 2.7rem ; width: 420px; border-radius: 8px; box-shadow: 0 8px 12px 4px rgb(222, 221, 221); background-color: white;  }
+					h1 { margin: 0 0 1.8rem; font-size: 1.8rem; font-weight: 900; text-align: center; }
+					h2 { margin-bottom: 1.8rem; text-align: center; font-size: 1.4rem; font-weight: 700; }
+						h2 span { display: block; color: rgb(175, 182, 188); font-style: italic; font-size: 1rem; font-weight: 500;  }
+					hr { outline: 1px solid rgb(231, 234, 235); border: 2px solid rgb(231, 234, 235); }
+
+					.plan-features {
+						margin: 2rem 0; padding: 0;
+						list-style-position: inside;
+						list-style: none;
+						
+						/* simple solution for list style - not recomended (produces inconsistent results): */ 
+						/* list-style-image: url('images/example/green-checkmark.svg') */
+						
+						/* better solution for list style - recomended - use background image */
+						/* shortcut: style - position - image */
+						/* list-style: circle inside url('images/pricing-plan/green-checkmark.svg'); */
+
+					}
+
+						.plan-features li { margin: .6rem 0; padding-left: 2rem;  background: url('images/pricing-plan/green-checkmark.svg') no-repeat; }
+
+					button { padding: 1rem; width: 100%; border: none; border-radius: 4px; font-size: 1rem; background-color: rgb(71, 90, 192); color: rgb(255, 255, 255); }
+
+
+		</style>
+	</head>
+	<body>
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<!-- Write your HTML here -->
+			<div class="card">
+				<h1>Platinum</h1>
+				<h2>$45 <span>per month</span></h2>
+				<hr>
+				<ul class="plan-features">
+					<li><strong>Unlimited</strong> Websites</li>
+					<li><strong>20</strong> GB Web Space</li>
+					<li><strong>~ 100,000</strong> Visits Monthly</li>
+					<li><strong>Unmetered</strong> Traffic</li>
+					<li><strong>Free</strong> SSL</li>
+				</ul>
+				<button>Choose Plan</button>
+			</div>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Pricing plan">
+			<img width="504px" src="images/reference/pricing-plan.png" alt="Pricing plan" />
+		</section>
+	</body>
+</html>

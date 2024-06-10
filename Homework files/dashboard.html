@@ -1,0 +1,98 @@
+<!DOCTYPE html><!-- Class files 3.9 | Borders 4:46 | CSS Box Model 4:30 -->
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Dashboard</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			/* Write your CSS here */
+			.learn { display: flex; justify-content: center; background-color: rgb(247, 247, 247); }
+				.container{ box-sizing: border-box; padding: 3rem; width: 910px; min-width: 500px; font-family: 'Poppins', sans-serif; color: rgb(55, 61, 65); background-color: rgb(255, 255, 255); border-radius: 8px; box-shadow: 2px 8px 8px 4px rgba(185, 192, 196, 0.2);}
+					h1 { margin: 0; padding: 0; font-size: 2rem; font-weight: 900; }
+					.wrapper { display: flex; gap: 2rem; justify-content: center; padding: 2rem; }
+.widget { box-sizing: border-box; width: 100%; min-width: 250px; max-width: 300px; padding: 2rem; border: 1px solid rgb(231, 233, 238); border-radius: 4px;  }
+						.widget:hover { border-color: rgba(60, 76, 90, 0.42); }
+							.widget img { width: 4rem; }
+							.widget h2 { margin: 1.25rem 0 0; }
+							.widget p { margin: .5rem 0 2rem; padding: 0; }
+							.widget p:nth-of-type(2) { display: flex; gap: .3rem; font-size: .8rem; color: rgb(208, 208, 208); }
+								.widget p img { width: 1.25rem; }
+								.money span:first-of-type,
+								.sales span:first-of-type { color: rgb(112,202,163); }
+								.comments span:first-of-type { color: rgb(219,119,131); }
+							button { box-sizing: border-box;display: flex; justify-content: center; align-items: center; gap: .5rem; padding: 0.6rem 1.4rem; border: 2px solid rgb(134, 136, 138); border-radius: 4px; background-color: rgb(255, 255, 255); font-size: 1rem; }
+							button:hover { outline: 2px solid rgb(79, 80, 81); }
+								button img { box-sizing: border-box; display: block; margin: -1.5rem; height: 1rem; }
+
+							
+
+		</style>
+	</head>
+	<body class="flip">
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<!-- Write your HTML here -->
+			<div class="container">
+				<h1>Dashboard</h1>
+				<div class="wrapper">
+					<div class="widget money">
+						<img src="./images/dashboard/icon-money.svg" alt="">
+						<h2>$4,502</h2>
+						<p>Earned this month</p>
+						<p>
+							<img src="./images/dashboard/icon-arrow-green.svg" alt="">
+							<span>+6.05%</span> 
+							<span>than last month</span>
+						</p>
+						<button>
+							Earnings
+							<img src="./images/dashboard/icon-arrow-right.svg" alt="">
+						</button>
+					</div>
+					<div class="widget sales">
+						<img src="./images/dashboard/icon-sales.svg" alt="">
+						<h2>22</h2>
+						<p>New sales</p>
+						<p>
+							<img src="./images/dashboard/icon-arrow-green.svg" alt="">
+							<span>+16.64%</span> 
+							<span>than last month</span>
+						</p>
+						<button>
+							Sales
+							<img src="./images/dashboard/icon-arrow-right.svg" alt="">
+						</button>
+					</div>
+					<div class="widget comments">
+						<img src="./images/dashboard/icon-chat.svg" alt="">
+						<h2>7</h2>
+						<p>New comments</p>
+						<p>
+							<img src="./images/dashboard/icon-arrow-red.svg" alt="">
+							<span>-19%</span> 
+							<span>than last month</span>
+						</p>
+						<button>
+							Commets
+							<img src="./images/dashboard/icon-arrow-right.svg" alt="">
+						</button>
+					</div>
+				</div>
+			</div>
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Dashboard">
+			<img width="971px" src="images/reference/dashboard.png" alt="Dashboard" />
+		</section>
+	</body>
+</html>

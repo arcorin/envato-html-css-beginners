@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Menu</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			/* Write your CSS here */
+			.learn { display: flex; justify-content: center; align-items: center; font-family: 'Poppins', sans-serif; background-color: rgb(247, 247, 247); }
+				.card { margin: auto; padding: 3rem; width: 275px; border-radius: 8px; background-color: 
+					rgb(255, 255, 255); box-shadow: 2px 12px 12px 4px rgb(227, 226, 226); }
+					h1 { margin: 0 0 1.2rem; padding: 0; font-size: 1.85rem; letter-spacing: -.5px; font-weight: 900; }
+					ul { margin: 0; padding: 0; }
+						li { padding: .5rem 0; list-style-type: none; font-weight: 600; }
+							a { display: flex; align-items: center; gap: 1rem; text-decoration: none; }
+							a:hover { font-weight: 900; }
+							ul.second-menu { margin: .9rem 0 0; padding: 1.4rem 2.5rem; border-radius: 8px; background-color: rgb(243, 244, 245); }
+								ul.second-menu li { padding: 0.2rem 0 0; font-weight: 500;}
+								
+		</style>
+	</head>
+	<body>
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<!-- Write your HTML here -->
+			<div class="card">
+				<h1>Application Menu</h1>
+				<ul>
+					<li><a href=""><img src="images/menu/menu-icon-1.svg" alt="">Dashboard</a></li>
+					<li><a href=""><img src="images/menu/menu-icon-2.svg" alt=""> Pages</a></li>
+					<li><a href=""><img src="images/menu/menu-icon-3.svg" alt=""> Posts</a></li>
+					<li><a href=""><img src="images/menu/menu-icon-4.svg" alt=""> Media</a>
+						<ul class="second-menu">
+							<li><a href="">Media library</a></li>
+							<li><a href="">Add media</a></li>
+							<li><a href="">Media statistics</a></li>
+						</ul>
+					</li>
+					<li><a href=""><img src="images/menu/menu-icon-5.svg" alt=""> Users</a></li>
+					<li><a href=""><img src="images/menu/menu-icon-6.svg" alt=""> Settings</a></li>
+				</ul>
+			</div>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Menu">
+			<img width="458px" src="images/reference/menu.png" alt="Menu" />
+		</section>
+	</body>
+</html>

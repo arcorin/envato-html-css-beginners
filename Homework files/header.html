@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>HTML and CSS for Complete Beginners Homework: Header</title>
+
+		<!-- This CSS and font is purely for presentational purposes. -->
+		<link rel="stylesheet" href="css/presentation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+
+		<style>
+			/* Write your CSS here */
+
+			* {	box-sizing: border-box; }
+
+			body { font-family: 'Poppins', sans-serif; }
+
+			.learn { display: flex; justify-content: center; align-items: center; background-color: rgb(247, 247, 247); }
+
+				/* use flexbox to align text with the logo */
+				header { box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; padding: 2.5rem 2rem 2.5rem 3rem; width: 880px; border-radius: 8px; box-shadow: 0 8px 12px 4px rgb(222, 221, 221); background-color: white; }
+
+					nav ul { list-style: none; padding: 0; font-size: .95rem; }
+
+						nav ul li { display: inline-block; margin-right: 1.5rem; }
+
+							li a { text-decoration: none; color: rgb(39, 32, 34); font-weight: 900; }
+
+			
+
+		</style>
+	</head>
+	<body class="flip">
+		<section class="learn">
+			<!-- Practice area start -->
+
+			<!-- Write your HTML here -->
+
+			<header>
+				<a href=""><img src="images/header/logo.svg" alt="Logo"></a>
+
+				<nav>
+					<ul>
+						<li><a href="">Portfolio</a></li>
+						<li><a href="">Services</a></li>
+						<li><a href="">Blog</a></li>
+						<li><a href="">About Me</a></li>
+						<li><a href="">Contact</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Practice area end -->
+		</section>
+
+		<section class="preview" data-content="Header">
+			<img width="945px" src="images/reference/header.png" alt="Header" />
+		</section>
+	</body>
+</html>
