@@ -1,7 +1,9 @@
 /* SCSS Variables */
 root {
 --color-dark-1:  rgb(58, 57, 57);
+--color-dark-1a: rgba(90, 89, 89, 0.711);
 --color-dark-2:  rgb(76, 76, 76);
+--color-dark-2a: rgba(73, 73, 96, 0.711);
 --color-dark-3:  rgb(91, 91, 91);
 --color-light-3: rgb(197, 197, 197);
 --color-light-2: rgb(202, 202, 225); 
@@ -9,8 +11,6 @@ root {
 --color-light-1: rgb(240, 239, 239);
 --color-light-1: rgb(247, 247, 247);
 --color-light-0: rgb(255, 255, 255);
---color-dark-1a: rgba(90, 89, 89, 0.711);
---color-dark-2a: rgba(73, 73, 96, 0.711);
 
 }
   
