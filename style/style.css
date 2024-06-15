@@ -1,14 +1,13 @@
 /* SCSS Variables */
 root {
 --color-dark-1:  rgb(58, 57, 57);
---color-dark-1a: rgba(90, 89, 89, 0.711);
 --color-dark-2:  rgb(76, 76, 76);
---color-dark-2a: rgba(73, 73, 96, 0.711);
 --color-dark-3:  rgb(91, 91, 91);
---color-light-3: rgb(197, 197, 197);
---color-light-2: rgb(202, 202, 225); 
---color-light-2: rgb(220, 220, 220);
---color-light-1: rgb(240, 239, 239);
+--color-medium-2: rgb(158, 158, 158);
+--color-medium-1: rgb(197, 197, 197);
+--color-accent-1: rgb(202, 202, 225); 
+--color-light-3: rgb(220, 220, 220);
+--color-light-2: rgb(240, 239, 239);
 --color-light-1: rgb(247, 247, 247);
 --color-light-0: rgb(255, 255, 255);
 
@@ -43,17 +42,16 @@ root {
   }
   
 
-
-body { margin: 0; padding: 0; color: rgb(58, 57, 57); background-color: rgb(76, 76, 76); color: white; }
+body { margin: 0; padding: 0; color: var(--color-dark-1); background-color: rgb(76, 76, 76); }
 
 a { text-decoration: none; }
-a:visited { color: rgb(76, 76, 76) }
+/* a:visited { color: rgb(76, 76, 76) } */
 
 h1 { padding: 0; margin: 0 0 1rem; text-align: center; font-size: 2rem; }
 
 p { margin: 0; padding: 0; text-align: center; }
 
-.breadcrumbs a { color: white; }
+.breadcrumbs a { color: rgb(255, 255, 255); }
 .breadcrumbs a:visited { color: rgb(202, 202, 225); }
 
 .container-0, .container { display: flex; justify-content: center; flex-wrap: wrap; align-items: center; padding: 2rem 0; width: 100vw; }
@@ -61,17 +59,20 @@ main .container-0 { background-color: rgb(197, 197, 197); }
 main .container  { background-color: rgb(240, 239, 239); }
     .course-info { display: flex; justify-content: space-between; align-items: center; gap: 5vw; padding: 3rem; width: 100vw; background-color: rgb(240, 239, 239); color: rgb(76, 76, 76); }
         .course-info-text > * { text-align: left; }
+          .course-data a:hover { color: red; }
+          .course-data a:visited { color: var(--color-dark-2); }
             .course-info-image img { width: 50vw; }
 
-
         .card { display: flex; flex-direction: column; justify-content: space-between; align-items: center; margin: 40px; /* padding: 30px; */ width: 350px; height: 570px; border-radius: 10px; box-shadow: 5px 5px 10px 10px rgb(220, 220, 220); background-color: rgb(255, 255, 255); color: rgb(91, 91, 91); }
-        .card:hover { scale: 1.2; transition-duration: .5s; background-color: rgb(247, 247, 247); box-shadow: 10px 10px 10px 10px rgb(158, 158, 158); }
+        .card:hover { scale: 1.2; transition-duration: .5s; background-color: rgb(247, 247, 247); box-shadow: 10px 10px 10px 10px rgb(197, 197, 197); }
+
+        .container-0 .card { box-shadow: 5px 5px 10px 10px rgb(158, 158, 158); }
            
-            .card a { margin: 0; padding: 0; color: rgb(90, 89, 89); }
+            .card a { margin: 0; padding: 0; color: rgb(91, 91, 91); }
                 .card .card-image { margin: 0; padding: 0; height: 400px; width: 300px; object-fit: contain; object-position: center 55%; /* filter: invert(1%) drop-shadow(2px 2px 3px rgb(169, 169, 169)); */ }                       
                 .card:hover .card-image { object-fit: contain; filter: invert(0); clip-path: none; }
 
-                /* clip-path -> cut the borders with shadows of the imagies on the card (clip-path=none when the card is hover):  */
+                /* clip-path -> cut the borders with shadows of the images on the card (clip-path=none when the card is hover):  */
                 .vertical { clip-path: inset(40px); } /* address, menu, recipe, login-form, pricing-plan */
                 .vertical-tall { clip-path: inset(20px 70px); } /* recipe */
                 .vertical-wide { clip-path: inset(40px 20px); } /* order-form, register-form */
@@ -90,8 +91,8 @@ main .container  { background-color: rgb(240, 239, 239); }
                 .card-lessons p:nth-of-type(2) { border-left: 1px solid lightgray; }
                 .technology { padding: 0 .2rem; width: 100%; }
                     .technology-name { display: block; margin-bottom: .5rem; }
-                    .technology a { font-size: .8rem; color: rgba(90, 89, 89, 0.711); }
-                    .technology a:visited { color: rgba(73, 73, 96, 0.711); }
+                    .technology a { font-size: .8rem; color: rgba(91, 89, 89, 0.711); }
+                    .technology a:hover { color: var(--color-dark-1); }
                 
 
 
