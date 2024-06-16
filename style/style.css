@@ -1,5 +1,5 @@
 /* SCSS Variables */
-root {
+:root {
 --color-dark-1:  rgb(58, 57, 57);
 --color-dark-2:  rgb(76, 76, 76);
 --color-dark-3:  rgb(91, 91, 91);
@@ -42,31 +42,35 @@ root {
   }
   
 
-body { margin: 0; padding: 0; color: var(--color-dark-1); background-color: rgb(76, 76, 76); }
+body { margin: 0; padding: 0; color: var(--color-dark-1); background-color: var(--color-dark-2); }
 
 a { text-decoration: none; }
-/* a:visited { color: rgb(76, 76, 76) } */
+/* a:visited { color: var(--color-dark-2) } */
 
 h1 { padding: 0; margin: 0 0 1rem; text-align: center; font-size: 2rem; }
 
 p { margin: 0; padding: 0; text-align: center; }
 
-.breadcrumbs a { color: rgb(255, 255, 255); }
-.breadcrumbs a:visited { color: rgb(202, 202, 225); }
+.breadcrumbs { margin: 0; padding: 2px 16px 0 ; color: var(--color-medium-2); }
+
+.breadcrumbs a { color: var(--color-light-0); }
+.breadcrumbs a:visited { color: var(--color-accent-1); }
 
 .container-0, .container { display: flex; justify-content: center; flex-wrap: wrap; align-items: center; padding: 2rem 0; width: 100vw; }
-main .container-0 { background-color: rgb(197, 197, 197); }
-main .container  { background-color: rgb(240, 239, 239); }
-    .course-info { display: flex; justify-content: space-between; align-items: center; gap: 5vw; padding: 3rem; width: 100vw; background-color: rgb(240, 239, 239); color: rgb(76, 76, 76); }
-        .course-info-text > * { text-align: left; }
-          .course-data a:hover { color: red; }
-          .course-data a:visited { color: var(--color-dark-2); }
-            .course-info-image img { width: 50vw; }
+main .container-0 { background-color: var(--color-medium-1); }
+main .container  { background-color: var(--color-light-2); }
+    .course-info { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 5vw; padding: 3rem; width: 100vw; background-color: var(--color-light-2); color: var(--color-dark-2); }
+      .course-info-text, .course-info-image { box-sizing: border-box; margin: 0; padding: 0; min-width: 250px; }
+      .course-info-text > * { text-align: left; text-wrap: wrap;}
+        .course-data a:hover { color: red; }
+        .course-data a:visited { color: var(--color-dark-2); }
+          .course-info-image img { width: 50vw; }
+      .course-info-image { display: flex; justify-content: center; margin: 0; padding: 0; }
 
-        .card { display: flex; flex-direction: column; justify-content: space-between; align-items: center; margin: 40px; /* padding: 30px; */ width: 350px; height: 570px; border-radius: 10px; box-shadow: 5px 5px 10px 10px rgb(220, 220, 220); background-color: rgb(255, 255, 255); color: rgb(91, 91, 91); }
-        .card:hover { scale: 1.2; transition-duration: .5s; background-color: rgb(247, 247, 247); box-shadow: 10px 10px 10px 10px rgb(197, 197, 197); }
+        .card { display: flex; flex-direction: column; justify-content: space-between; align-items: center; margin: 40px; /* padding: 30px; */ width: 350px; height: 570px; border-radius: 10px; box-shadow: 5px 5px 10px 10px var(--color-light-3); background-color: var(--color-light-0); color: var(--color-dark-3); }
+        .card:hover { scale: 1.2; transition-duration: .5s; background-color: var(--color-light-1); box-shadow: 10px 10px 10px 10px var(--color-medium-2); }
 
-        .container-0 .card { box-shadow: 5px 5px 10px 10px rgb(158, 158, 158); }
+        .container-0 .card { box-shadow: 5px 5px 10px 10px var(--color-medium-2); }
            
             .card a { margin: 0; padding: 0; color: rgb(91, 91, 91); }
                 .card .card-image { margin: 0; padding: 0; height: 400px; width: 300px; object-fit: contain; object-position: center 55%; /* filter: invert(1%) drop-shadow(2px 2px 3px rgb(169, 169, 169)); */ }                       
