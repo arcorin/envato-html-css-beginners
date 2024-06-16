@@ -5,7 +5,8 @@
 --color-dark-3:  rgb(91, 91, 91);
 --color-medium-2: rgb(158, 158, 158);
 --color-medium-1: rgb(197, 197, 197);
---color-accent-1: rgb(202, 202, 225); 
+--color-accent-dark: rgb(77, 77, 145);
+--color-accent-light: rgb(167, 167, 226); 
 --color-light-3: rgb(220, 220, 220);
 --color-light-2: rgb(240, 239, 239);
 --color-light-1: rgb(247, 247, 247);
@@ -45,26 +46,30 @@
 body { margin: 0; padding: 0; color: var(--color-dark-1); background-color: var(--color-dark-2); }
 
 a { text-decoration: none; }
-/* a:visited { color: var(--color-dark-2) } */
+a:hover { color: var(--color-accent-light); }
 
-h1 { padding: 0; margin: 0 0 1rem; text-align: center; font-size: 2rem; }
+h1 { margin: 0 0 1rem; padding: 0; text-align: center; font-size: 2rem; }
+
+h2 { display: flex; justify-content: center; flex-wrap: wrap; align-items: center; margin: 0; padding: 4rem 0 0.5rem; width: 75vw; font-size: 1.8rem; font-weight: 700;  border-bottom: 1px solid var(--color-medium-2); }
+.container h2 { color: var(--color-dark-3); }
+
 
 p { margin: 0; padding: 0; text-align: center; }
 
 .breadcrumbs { margin: 0; padding: 2px 16px 0 ; color: var(--color-medium-2); }
 
 .breadcrumbs a { color: var(--color-light-0); }
-.breadcrumbs a:visited { color: var(--color-accent-1); }
+.breadcrumbs a:hover { color: var(--color-accent-light); }
 
-.container-0, .container { display: flex; justify-content: center; flex-wrap: wrap; align-items: center; padding: 2rem 0; width: 100vw; }
+.container-0, .container { display: flex; justify-content: center; flex-wrap: wrap; align-items: center; padding: 0 0 2rem; width: 100vw; }
 main .container-0 { background-color: var(--color-medium-1); }
 main .container  { background-color: var(--color-light-2); }
-    .course-info { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 5vw; padding: 3rem; width: 100vw; background-color: var(--color-light-2); color: var(--color-dark-2); }
+    .course-info { display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; gap: 5vw; padding: 3rem; width: 100vw; background-color: var(--color-light-2); color: var(--color-dark-2); }
       .course-info-text, .course-info-image { box-sizing: border-box; margin: 0; padding: 0; min-width: 250px; }
       .course-info-text > * { text-align: left; text-wrap: wrap;}
-        .course-data a:hover { color: red; }
+        h1.course-data a:hover { color: var(--color-accent-dark);  }
         .course-data a:visited { color: var(--color-dark-2); }
-          .course-info-image img { width: 50vw; }
+          .course-info-image img { width: 50vw; min-width: 450px; }
       .course-info-image { display: flex; justify-content: center; margin: 0; padding: 0; }
 
         .card { display: flex; flex-direction: column; justify-content: space-between; align-items: center; margin: 40px; /* padding: 30px; */ width: 350px; height: 570px; border-radius: 10px; box-shadow: 5px 5px 10px 10px var(--color-light-3); background-color: var(--color-light-0); color: var(--color-dark-3); }
@@ -96,7 +101,7 @@ main .container  { background-color: var(--color-light-2); }
                 .technology { padding: 0 .2rem; width: 100%; }
                     .technology-name { display: block; margin-bottom: .5rem; }
                     .technology a { font-size: .8rem; color: rgba(91, 89, 89, 0.711); }
-                    .technology a:hover { color: var(--color-dark-1); }
+                    .technology a:hover { color: var(--color-accent-dark); }
                 
 
 
