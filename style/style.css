@@ -56,7 +56,7 @@ h2 { display: flex; justify-content: center; flex-wrap: wrap; align-items: cente
 
 p { margin: 0; padding: 0; text-align: center; }
 
-.breadcrumbs { margin: 0; padding: 2px 16px 0 ; color: var(--color-medium-2); }
+.breadcrumbs { margin: 0; padding: .4rem 1rem; color: var(--color-medium-2); }
 .breadcrumbs a { color: var(--color-light-0); }
 .breadcrumbs a:hover { color: var(--color-accent-light); }
 
@@ -71,7 +71,7 @@ main .container  { background-color: var(--color-light-2); }
         .course-data-author { color: var(--color-dark-3); }
         .course-data-content { box-sizing: border-box; padding: 2rem 0; width: clamp(450px, 50vw, 500px); line-height: 1.5; color: var(--color-dark-1); }
           .course-data-content a { color: var(--color-dark-2); font-weight: 700; }
-          .course-data-content a:hover { color: var(--color-accent-dark); }
+          .course-data-content a:hover { color: var(--color-light-2); background-color: var(--color-accent-dark); }
         .course-info-links { display: flex; justify-content: flex-start; margin: 2rem 0 2rem; padding: .5rem 1rem; width: 16rem; color: var(--color-light-3); background-color: var(--color-dark-2); border-radius: 10px; }
           .course-info-links a { color: var(--color-light-0); }
 
@@ -109,9 +109,10 @@ main .container  { background-color: var(--color-light-2); }
                     .technology-name { display: block; margin-bottom: .5rem; }
                     .technology a { font-size: .8rem; color: rgba(91, 89, 89, 0.711); }
                     .technology a:hover { color: var(--color-accent-dark); }
-            
-        .tooltip .tooltiptext { visibility: hidden; }
-        .tooltip:hover tooltiptext { visibility: visible; }
+
+          .tooltip { position: relative; }  
+            .tooltip .tooltiptext { visibility: hidden; position: absolute; top: 1%; right: -4%; z-index: 1; padding: .2em 0.4rem; border-radius: 4px; text-align: center; background-color: var(--color-accent-dark); color: var(--color-light-0); font-size: .8rem; }
+            .tooltip:hover .tooltiptext { visibility: visible; }
 
 footer { margin: 0; padding: 0 0 1rem ; color: var(--color-medium-2); }
   footer p { padding-bottom: .5rem }
